@@ -1,12 +1,13 @@
-:root {
-  --blue: #007bff;
-}
-
-/* Reset de margens padrão */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Variável para cor azul */
+:root {
+  --blue: #007bff;
 }
 
 body {
@@ -14,70 +15,62 @@ body {
 }
 
 /* Cabeçalho */
-header {
+.moyo-header {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
   background-color: #fff;
 }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 60px; /* Altura conforme design */
-  margin: 0 40px; /* Margem lateral do conteúdo */
-}
-
-/* Logo */
-.logo {
-  display: block;
-}
-
-.logo img {
+/* Logotipo */
+.moyo-logo img {
   height: 40px;
 }
 
 /* Navegação */
-nav ul {
-  display: flex;
+.moyo-nav ul {
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  margin: 0 20px;
+.moyo-nav li {
+  margin-left: 24px;
 }
 
-nav ul li:first-child {
+.moyo-nav li:first-child {
   margin-left: 0;
 }
 
-nav ul li:last-child {
+.moyo-nav li:last-child {
   margin-right: 0;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #000;
+.moyo-nav a {
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  line-height: 40px; /* altura definida para os links */
+  position: relative;
   display: inline-block;
   text-align: center;
 }
 
 /* Hover */
-nav ul li a:hover {
+.moyo-nav a:hover {
   color: var(--blue);
 }
 
-/* Link ativo */
-.is-active {
-  position: relative;
-}
-
-.is-active::after {
-  content: '';
+/* Link ativo com linha azul */
+.moyo-nav a.is-active::after {
+  content: "";
   position: absolute;
-  bottom: -4px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 2px;
