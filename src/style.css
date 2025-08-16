@@ -1,33 +1,34 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Variável para cor azul */
 :root {
   --blue: #007bff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
   font-family: Roboto, sans-serif;
 }
 
-/* Cabeçalho */
-.moyo-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-  background-color: #fff;
-}
-
-/* Logotipo */
-.moyo-logo img {
-  height: 40px;
-}
 
 /* Navegação */
 .moyo-nav ul {
