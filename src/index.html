@@ -1,19 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Exemplo de Logotipo</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Layout Moyo Header</title>
+    <!-- Fonte Roboto: apenas Medium (500), estilo roman, largura normal -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
   </head>
   <body>
     <header class="moyo-header">
-      <a href="/" class="logo">
-        <img src="src/images/logo.png" alt="Logotipo da Empresa" />
+      <a
+        href="/"
+        class="moyo-logo"
+      >
+        <img
+          src="src/images/logo.png"
+          alt="Logotipo da Empresa"
+        />
       </a>
       <nav>
-        <!-- Links de navegação aqui -->
+        <ul class="moyo-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li>
+            <a
+              href="#"
+              class="is-active"
+            >
+              Serviços
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              data-qa="hover"
+            >
+              Laptops &amp; Computers
+            </a>
+          </li>
+          <li><a href="#">Contato</a></li>
+        </ul>
       </nav>
     </header>
   </body>
 </html>
-
